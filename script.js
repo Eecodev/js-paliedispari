@@ -21,13 +21,13 @@ button.addEventListener('click', function() {
     const inputWord = document.getElementById('word').value;
     console.log(inputWord);
 
-    let stringa = 'parola';
-    console.log (stringa.length);   
-    let nuovaStringa = '';
-    for(let i = stringa.length - 1; i >= 0; i--){
-    console.log(stringa[i]);
-    nuovaStringa += stringa [i];
-}
-    console.log(nuovaStringa);
+    let inputReverse = '';
+    for (i = inputWord.length - 1; i >= 0; i--) {
+        inputReverse += inputWord[ i ]
+    } if (inputReverse === inputWord) {
+        console.log('la parola è palindroma')
+    } else {
+        console.log('la parola non è palindroma')
+    }
 })
 
